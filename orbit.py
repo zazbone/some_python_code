@@ -46,7 +46,7 @@ def main():
 if __name__ == "__main__":
     FRICTION_INTENSITY = -.0004  # friction coeficient for code simplification, ideal = -.0004
     GRAVITY_INTENSITY = 5  # ideal 5
-    BALL_NUMBER = 2  # ideal 3
+    BALL_NUMBER = 5  # ideal 3
     INITIAL_SPEED = 0.1  # ideal .1
     screen = turtle.Screen()
     screen.bgcolor("black")
