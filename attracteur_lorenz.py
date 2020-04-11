@@ -45,13 +45,13 @@ if __name__ == "__main__":
     attracteur = Lorentz()
     fig = plt.figure()
     ax = plt.axes(projection="3d")
-    x = []
-    y = []
-    z = []
-    for i in attracteur:
-        x.append(i[0])
-        y.append(i[1])
-        z.append(i[2])
-    ax.plot3D(xs=x, ys=y, zs=z, color="blue")
+    x_axes = []
+    y_axes = []
+    z_axes = []
+    for x, y, z in attracteur:
+        x_axes.append(x)
+        y_axes.append(y)
+        z_axes.append(z)
+    ax.plot3D(xs=x_axes, ys=y_axes, zs=z_axes, color="blue")
     plt.show()
     print("goodbye")
