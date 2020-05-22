@@ -14,7 +14,7 @@ def main():
         ball.dy *= INITIAL_SPEED
         ball.dy *= INITIAL_SPEED
         ball.color("#{:06x}".format(randint(0, 0xFFFFFF)))
-        #ball.pendown()
+        ball.pendown()
         ball.max_speed = 0
         sample.append(ball)
     while True:
@@ -46,7 +46,7 @@ def main():
 if __name__ == "__main__":
     FRICTION_INTENSITY = -.0004  # friction coeficient for code simplification, ideal = -.0004
     GRAVITY_INTENSITY = 5  # ideal 5
-    BALL_NUMBER = 5  # ideal 3
+    BALL_NUMBER = 3  # ideal 3
     INITIAL_SPEED = 0.1  # ideal .1
     screen = turtle.Screen()
     screen.bgcolor("black")

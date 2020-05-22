@@ -41,7 +41,7 @@ if __name__ == "__main__":
     print("hello")
     sigma = 10
     beta = 8/3
-    rho = 28
+    rho = float(input("Rho value:"))
     attracteur = Lorentz()
     fig = plt.figure()
     ax = plt.axes(projection="3d")
