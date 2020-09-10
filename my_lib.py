@@ -3,6 +3,15 @@ from math import sqrt, floor
 from random import randrange
 
 
+def ask_int(prompt="Give integer value:"):
+    while True:
+        try:
+            out = int(input(prompt))
+            return out
+        except ValueError:
+            print("Give int or int-convertible value")
+
+
 def creat_ball():
     ball = turtle.Turtle()
     ball.shape("circle")
