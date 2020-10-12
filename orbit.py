@@ -1,5 +1,5 @@
 import turtle
-import my_lib
+from utils import my_lib
 from random import randrange, randint
 
 
