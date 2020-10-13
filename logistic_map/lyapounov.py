@@ -1,6 +1,6 @@
 from math import log
 
-from logistic_map.suite import log_suite_gen, logistic_deriv
+from .suite import log_suite_gen, logistic_deriv
 
 
 def calc_coef(k=3.45, init_value=0.9, n=100):
