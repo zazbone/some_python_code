@@ -32,7 +32,7 @@ def lyap_funcof_k(k=(0, 4), init_value=0.9):
     plt.xlim(k[0], k[1])
     plt.ylim(-4, 1)
     plt.xlabel("growth rate (k)")
-    plt.ylabel("laypunov coeficient")
+    plt.ylabel("Lyapounov coeficient")
     plt.title("lyap(k)")
     plt.grid(True)
     plt.plot(r_axes, lyap_axes)
