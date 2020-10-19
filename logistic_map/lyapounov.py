@@ -19,8 +19,8 @@ def _sum_term(k, value, deriv_func, n):
     Intermediate calculation function
     """
     dx = deriv_func(k, value)
-    if not dx:  # Avoid log(0)
-        abs_log = -10000000
-    else:
+    try:
         abs_log = log(abs(dx))
+    except ValueError:  # Handle math error for log(0)
+        abs_log = -10000000
     return abs_log / n
