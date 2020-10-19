@@ -2,20 +2,24 @@
 # I will do different computation on it as exercise
 
 
-from logistic_map.suite import log_suite, log_suite_gen
-from logistic_map.lyapounov import calc_coef
+from logistic_map.suite import log_suite
 from logistic_map import show
 
 
-def test():
-    print(log_suite(k=3.45, init_value=0.9, n_max=100))
+def test_suite():
+    k=3.45
+    init_value=0.9
+    n_max=100
+    print(
+        f"Logistical suite value at gen: {n_max} for growth rate: {k} and initial value: {init_value} =>",
+        log_suite(k, init_value, n_max)
+    )
+    show.generation_plot(k, init_value, n_max)
 
-    for n, u in zip(range(101), log_suite_gen(n_max=100)):
-        print(f"Gen {n} u={u}")
 
-    print(calc_coef(n=100000))
-
-    show.generation_plot()
+def test_lyap():
+    show.lyap_funcof_k()
 
 
-test()
+test_suite()
+test_lyap()
