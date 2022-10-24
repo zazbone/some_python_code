@@ -13,7 +13,9 @@ description = "Des fois j'ai rien envie de faire"
 dependencies = [
 	"numpy >= 1.23",
 	"matplotlib >= 3.6",
-	"scipy >= 1.9"
+	"scipy >= 1.9",
+	"astropy",
+	"pyglet"
 ]
 
 
