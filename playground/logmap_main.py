@@ -2,8 +2,8 @@
 # I will do different computation on it as exercise
 
 
-from logistic_map.suite import log_suite
-from logistic_map import show
+from libs.logistic_map.suite import log_suite
+from libs.logistic_map import show
 
 
 def test_suite():

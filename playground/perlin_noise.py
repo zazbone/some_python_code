@@ -1,7 +1,7 @@
 import random as rd
 import numpy as np
 from PIL import Image
-from my_lib import ask_int
+from libs.utils.my_lib import ask_int
 from time import perf_counter
 from scipy.misc import imresize
 
