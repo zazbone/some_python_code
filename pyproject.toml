@@ -11,6 +11,7 @@ classifiers = ["License :: OSI Approved :: MIT License"]
 version = "0.1"
 description = "Des fois j'ai rien envie de faire"
 dependencies = [
+	"astropy ~= 5.1",
 	"numpy >= 1.23",
 	"matplotlib >= 3.6",
 	"scipy >= 1.9",
